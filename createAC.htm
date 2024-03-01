@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <title>iLearn.com </title>
+    <link rel="stylesheet" href="createAC.css">
+
+    <head>
+
+
+    </head>
+
+    <body>
+        <div>
+            <form action="connect.php" method="post">
+                <center>
+      
+                    <div class="frame">
+                       <center>
+                            <label class="logo">Sing Up</label>
+                            <div class="frame2">
+                               <img src="pp.jpg" style="height: 100px; width: 100px;">
+       
+                            </div>
+        
+       
+                       
+                       </center>
+                       <h4 style="margin-top: 30px;">First Name</h4>
+                       <input type="text" placeholder="salfu" class="general" id="firstName" name="firstName">
+                       <h4 style="margin-top: 30px;">Last Name</h4>
+                       <input type="text" placeholder="Kamara" class="general"  name="lastName">
+                       <h4 style="margin-top: 30px;">Email/phone</h4>
+                       <input type="email" placeholder="salfuj77@gmi.com" class="general" id="email" name="email">
+                       <div style="display: flex;">
+                           <div style="margin-left: 30px; margin-right: 40px;">
+                               <h4 style="margin-top: 30px;">Business</h4><br>
+                               <select>
+                                   <option>Others</option>
+                                   <option>Food</option>
+                                   <option>Cloths</option>
+                                   <option>Funitures</option>
+                                   <option>Electronic</option>
+                                   <option>Stationary</option>
+                                   <option>Medicine</option>
+                                   <option>Hairstyle / cut</option>
+                                   <option>Painter</option>
+                                   <option>Teacher</option>
+                                   <option>Bank</option>
+                                   <option>Electronic</option>
+                                   <option>Stationary</option>
+                                   <option>Technician</option>
+                                   <option>Haire</option>
+                               </select>                        
+                           </div>
+                           <div>
+                               <h4 style="margin-top: 30px;">Type</h4><br>
+                               <select>
+                                   <option>Both</option>
+                                   <option>Retale</option>
+                                   <option>HoldSale</option>
+                               </select>
+       
+                           </div>  
+       
+                           </div>
+       
+       
+                       <h4 style="margin-top: 30px;">General</h4>
+                       <input type="checkbox" href="javascript:void(0)" class="closeOption" onclick="openGenerl()" value="general">
+                       <h4 style="margin-top: 30px;">Perimum</h4>
+                       <input type="checkbox" href="javascript:void(0)" class="closeOption" onclick="openPerimum()" value="perimum">
+                       <h4 style="margin-top: 30px;">Business Name</h4>
+                       <input type="text" placeholder="Sal enterprice" class="general"  id="businessName" name="businessName">
+                       <h4 style="margin-top: 30px;">Address</h4>
+                       <input type="text" placeholder="20th June street" class="general" id="address" name="address">
+                       <h4 style="margin-top: 30px;">Password</h4>
+                       <input type="password" placeholder="salfu12345" class="general" id="password" name="password">
+                       <h4 style="margin-top: 30px;">Confirm Password</h4>
+                       <input type="password" placeholder="salfu12345" class="general" id="confirmPassword" name="confirmPassword"><br>
+                       <h4><input type="checkbox" style="height: 20px; height: 20px; float: left; margin: 0px;" class="general">i agree to<a href="./test.html">terms and condition</a> </h4>
+       
+                       <div id="Perimum" class="option">
+                           <a href="javascript:void(0)" class="closeOption" onclick="closeOption()">&times;</a>
+                           <h4 style="margin-top: 30px; color: orange;">State</h4>
+                           <input type="text" placeholder="Freetown" class="general" id="state" id="state">
+                           <h4 style="margin-top: 30px; color: orange;">Country</h4>
+                           <input type="text" placeholder="Sierra Leone" class="general" id="country" name="country"><br>
+       
+                           <center>
+                               <img src="afriMoney.jpg" style="width: 50px; height: 50px;">
+                               <img src="orangeMoney.png" style="width: 50px; height: 50px; margin-left: 10px; margin-right: 10px;">
+                               <img src="qcell.jpg" style="width: 50px; height: 50px;"><br>
+                               <h4 style="margin-top: 30px; color: orange;">Code</h4>
+                               <input type="text" id="code" name="code">
+                               <button onclick="save()" id="save" class="btn-save" style="margin-top: 10px; width: 35px; height: 20px; border-radius: 15px; color: white; text-align: center; float: right; background-color: orange;">Save</button>
+                            
+                           </center>
+       
+       
+                       </div>
+       
+                       <button onclick="signUp()" id="signUp" class="btn-login" style="margin-top: 10px; width: 70px; height: 40px; border-radius: 15px; color: white; text-align: center; float: center; background-color: indigo;">Enter</button>
+       
+       
+               </center>
+            </form>
+        </div>
+        
+
+    </body>
+    <script>
+
+    function openPerimum() {
+      document.getElementById("Perimum").style.width = "300px";
+    }
+
+    function closeOption() {
+      document.getElementById("Perimum").style.width = "0";
+    }
+
+
+    </script>
+</html>

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background-color: white;
+    
+}
+div.frame{
+    width: 60%;
+    height: 680px;
+    position: absolute;
+    background-color: orange;
+    float: center;
+    color: aquamarine;
+}
+h4{
+    color: indigo;
+}
+div.frame2{
+    float: center;
+    text-align: center;
+}
+div.frame3{
+    width: 40%;
+    height: 680px;
+    background-color: indigo;
+    float: center;
+    color: white;
+}
+
+div.frame4{
+    float: center;
+    text-align: center;
+}
+div.set{
+    
+    margin: 15px;
+}
+
+label.logo{
+    font-weight: bold;
+    font-size: 40px;
+    color: indigo;
+}
+input.general{
+    width: 50%;
+    height: 30px;
+    border-radius: 15px;
+    border-color: blue;
+}
+.btn-login{
+    background-color: black;
+}
+.Popup {
+    background-color: blueviolet;
+    float: center;
+    height: 100%;
+    width: 0%;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+  .questions{
+    float: left;
+    text-align: left;
+    line-height: 15px;
+    
+  }
+  .set {
+    height: 100%;
+    width: 0;
+    z-index: 1;
+    right: 0;
+    left: 0;
+    background-color: blueviolet;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+

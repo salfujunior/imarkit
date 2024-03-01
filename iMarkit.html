@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" > 
+<head >
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+<body >
+    <nav>
+        <label class="logo"><b><a style="color: black; font-size: 45px;">i</a><a style="color: whitesmoke;">Mar</a><a style="color: orange;">kit</a></b></label>
+        
+        <sal>
+            <lo>
+             <a href="./login.html" style="color: white; margin-right: 5px;"><span style="font-size:40px;cursor:pointer" onclick="openNav()">  &#9787; </span></a> 
+
+             </lo>
+           
+            <ol>
+             
+                <span style="font-size:25px;cursor:pointer" onclick="openOption()">&#9776;</span> 
+                <div id="myOption" class="option">
+                 <a href="javascript:void(0)" class="closeOption" onclick="closeOption()">&times;</a>
+                 <a href="#">&#9776;Account</a>
+                 <a href="#">Compitisions</a>
+                 <a href="#">Services</a>
+                 <a href="#">Notifications</a>
+                 <a href="#">Share</a>
+                 <a href="#">About</a>
+                 <a href="#">Settigs</a>
+                 <a href="#">Contact Us</a>
+                 <a href="#">Login</a>
+
+               </div>
+   
+            </ol>
+   
+               </sal>
+
+               <center>
+                <a><input placeholder="Search: " type="text" style="width: 50%; height: 25px; border-radius: 10px; margin-top: 10px;">                   
+                    <span style="font-size:25px;cursor:pointer" onclick="openSearchBar()">&#128269;</span> 
+                </a>
+
+            </center>
+
+
+        </div>
+      
+   </nav>
+    
+    <div class="item_type">   
+        <button onclick="displayAll()"> ..All.. </button>
+        <button onclick="displayFood()">Food</button>
+        <button onclick="displayCloths()">Cloths</button>
+        <button onclick="displayFurnitures()">Funitures</button>
+        <button onclick="displayFood()">Electronic</button>
+        <button onclick="displayFood()">Stationary</button>
+        <button onclick="displayFood()">Medicine</button>
+        <button onclick="displayFood()">Hairstyle / cut</button>
+        <button onclick="displayFood()">Painter</button>
+        <button onclick="displayFood()">Teacher</button>
+        <button onclick="displayFood()">Bank</button>
+        <button onclick="displayCosmetics()">Cosmetics</button>
+        <button onclick="displayFood()">Design</button>
+        <button onclick="displayFood()">Entertainment</button>
+        <button onclick="displayFood()">Haire</button>
+
+    </div>
+            <div id="product-list" class="list" >
+
+            </div>
+    <script src="products.js"></script>
+</body>
+</html>

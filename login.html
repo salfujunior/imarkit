@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <title>iLearn.com </title>
+    <link rel="stylesheet" href="createAC.css">
+
+    <head>
+
+
+    </head>
+
+    <body>
+        <center>
+      
+             <div class="frame">
+                <center>
+                     <label class="logo">LogIn</label>
+                     <div class="frame2">
+                        <img src="pp.jpg" style="height: 100px; width: 100px;">
+
+                     </div>
+                 <h4 style="margin-top: 30px;">Email/phone</h4>
+                <input type="email" placeholder="salfuj77@gmi.com" class="general" id="email">
+                <h4 style="margin-top: 30px;">Password</h4>
+                <input type="password" placeholder="12345" class="general" id="password"><br>
+                <button onclick="login()" id="login" class="btn-login" style="margin-top: 10px; width: 70px; height: 40px; border-radius: 15px; color: white; text-align: center; float: center; background-color: indigo;">Enter</button><br>
+
+                <a href="./iLearn.html"><h4 style="color: black;">Forget Password</h4></a>
+                <a href="./createAC.htm" style="text-align: left;"><h4 style="color: black;">Creat Account</h4></a>
+                
+
+                
+                </center>
+
+
+             </div>
+
+
+
+        </center>
+
+    
+       
+
+    </body>
+
+
+
+
+
+    <script type="module">
+
+      // Import the functions you need from the SDKs you need
+    
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    
+      import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
+      import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+      import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js";
+
+    
+    
+      // TODO: Add SDKs for Firebase products that you want to use
+    
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+    
+      // Your web app's Firebase configuration
+    
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    
+      const firebaseConfig = {
+    
+        apiKey: "AIzaSyC63CZDOwEUe2_YRR-Im_GXmIXfzW2pwIE",
+    
+        authDomain: "ilearn-abd0f.firebaseapp.com",
+    
+        databaseURL: "https://ilearn-abd0f-default-rtdb.firebaseio.com",
+    
+        projectId: "ilearn-abd0f",
+    
+        storageBucket: "ilearn-abd0f.appspot.com",
+    
+        messagingSenderId: "579283883358",
+    
+        appId: "1:579283883358:web:76169e5f7b94cfc2216bcf",
+    
+        measurementId: "G-34BT9LKGDN"
+    
+      };
+    
+    
+      // Initialize Firebase
+    
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+    
+      login.addEventListener("click",(e)=>{
+          var firstName=document.getElementById("firstName").value;
+          var lastName=document.getElementById("lastName").value;
+          var email=document.getElementById("email").value;
+          var schoolName=document.getElementById("schoolName").value;
+          var level=document.getElementById("level").value;
+          var schoolAddress=document.getElementById("schoolAddress").value;
+          var password=document.getElementById("password").value;
+          var confirmPassword=document.getElementById("confirmPassword").value;
+    
+          const auth = getAuth();
+          signInWithEmailAndPassword(auth, email, password)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    alert("salfu u r in")
+    // ...
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+
+    alert(errorMessage)
+
+  });
+
+})
+    
+    
+    
+    </script>
+</html>
